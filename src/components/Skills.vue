@@ -1,14 +1,16 @@
 <template>
   <div class="hello">
-    Skills
+    {{name}}
   </div>
 </template>
 
 <script>
 export default {
   name: 'Skills',
-  props: {
-
+  data() {
+    return {
+      name: 'Web Development'
+    }
   }
 }
 </script>
