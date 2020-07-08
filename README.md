@@ -1,5 +1,5 @@
 # vue-skills
-
+Skills management web app with Vue.JS
 ## Project setup
 ```
 npm install
