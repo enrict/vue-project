@@ -1,6 +1,10 @@
 <template>
   <div class="hello">
-    {{name}}
+    <div class="holder">
+      <ul>
+        <li v-for="(data, index) in skills" :key='index'>{{index}}. {{ data.skill }}</li>
+      </ul>
+    </div>
   </div>
 </template>
 
@@ -9,7 +13,10 @@ export default {
   name: 'Skills',
   data() {
     return {
-      name: 'Web Development'
+      skills: [
+        {"skill": "Vue.js"},
+        {"skill": "PHP"}
+      ]
     }
   }
 }
